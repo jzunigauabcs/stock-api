@@ -5,7 +5,7 @@ const findAll = () => {
 };
 
 const findById = (id) => {
-  return strore.orders.find((order) => order.id === id);
+  return store.orders.find((order) => order.id === id);
 };
 
 const existsForProduct = (productId) => {
@@ -18,7 +18,7 @@ const create = (data) => {
     status: "completed",
     ...data,
   };
-  store.order.push(order);
+  store.orders.push(order);
   return order;
 };
 
